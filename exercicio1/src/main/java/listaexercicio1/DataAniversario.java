@@ -1,0 +1,48 @@
+package listaexercicio1;
+
+public class DataAniversario {
+	
+	private int dia;
+	private int mes;
+	
+	public DataAniversario (int dia, int mes) {
+		this.dia = dia;
+		this.mes = mes;
+		
+	}
+	
+	public int getDia() {
+		return dia;
+	}
+	
+	public void setDia (int dia) {
+		this.dia = dia;		
+	}
+	
+	public int getMes() {
+		return mes;
+	}
+	
+	public void setMes(int mes) {
+		this.mes = mes;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null || getClass() != obj.getClass()) {
+			return false;
+		}
+		DataAniversario outra = (DataAniversario) obj;
+		return this.dia == outra.dia && this.mes == outra.mes;
+	}
+ 
+	@Override
+	public int hashCode() {
+		return 31 * dia + mes;
+	}
+ 
+}
+
