@@ -2,7 +2,7 @@
 public abstract class Pizza {
 	String name;
 	Dough dough;
-	Saude sauce;
+	Sauce sauce;
 	Veegies veegies[];
 	Cheese cheese;
 	Pepperoni pepperoni;
@@ -27,6 +27,7 @@ public abstract class Pizza {
 	}
 	
 	public String toString() {
+		return name;
 		
 	}
 
